@@ -164,7 +164,7 @@ var adv = gsap.timeline(
 
 adv.from
     (
-        "#adv-title span",
+        "#adv-title2 span",
         {
             opacity: 0,
             duration: 0.5,
