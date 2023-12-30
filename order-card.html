@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/main.css">
 
     <link rel="stylesheet" href="./css/order-card.css">
-    <script src="./js/order-card.js"></script>
+    <script src="./js/order-card.js" defer></script>
 </head>
 <body>
     <header>
@@ -30,6 +30,96 @@
     </header>
     <section class="main">
         
+        <h1 class="main-title" >Order <span class="blue">Card</span></h1>
+        <div class="form-card">
+            <div class="container">
+              <form action="thankyou.html" method="get">                
+                <fieldset>
+                  
+                  <h3><span class="number">1</span> Your Basic Info</h3>
+                
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="user_name" required>
+                
+                  <label for="email">Email:</label>
+                  <input type="email" id="mail" name="user_email" required>
+
+                  <label for="Phone">Phone:</label>
+                  <input type="number" id="Phone" name="user_Phone" maxlength="12" required>
+               
+                  <label for="CNIC">CNIC:</label>
+                  <input type="text" id="CNIC" name="user_CNIC" pattern="\d{5}-\d{7}-\d{1}" title="Please enter a valid CNIC number in the format xxxxx-xxxxxxx-x" required>
+
+                
+                </fieldset>
+
+                <fieldset>  
+                
+                  <h3><span class="number">2</span> Your Profile</h3>
+               
+                
+                 <label for="job">Job Role:</label>
+                  <select id="job" name="user_job">
+                    <optgroup label="Web">
+                      <option value="frontend_developer">Front-End Developer</option>
+                      <option value="php_developer">PHP Developer</option>
+                      <option value="python_developer">Python Developer</option>
+                      <option value="rails_developer">Rails Developer</option>
+                      <option value="web_designer">Web Designer</option>
+                      <option value="wordpress_developer">Wordpress Developer</option>
+                    </optgroup>
+                    <optgroup label="Mobile">
+                      <option value="android_developer">Android Developer</option>
+                      <option value="ios_developer">IOS Developer</option>
+                      <option value="mobile_designer">Mobile Designer</option>
+                    </optgroup>
+                    <optgroup label="Business">
+                      <option value="business_owner">Business Owner</option>
+                      <option value="freelancer">Freelancer</option>
+                    </optgroup>
+                  </select>
+
+                  <label for="income">Income Range:</label>
+                    <select id="income" name="user_income">
+                    <option value="50000-100000">Rs 50,000 - Rs 100,000</option>
+                    <option value="100001-150000">Rs 100,000 - Rs 150,000</option>
+                    <option value="150001-200000">Rs 150,000 - Rs 200,000</option>
+                    </select>
+                  
+                 </fieldset>
+
+                 <fieldset>
+                    <h3><span class="number">3</span> Card Details</h3>
+
+                    <label for="card_type">Card Type:</label>
+                    <select id="card_type" name="user_card_type" onchange="updateCardImage(this.value)">
+                    <option value="bronze">Bronze </option>
+                    <option value="silver">Silver </option>
+                    <option value="gold">Gold </option>
+                    </select>
+
+                    <label for="limit">Card Limit:</label>
+                    <select id="limit" name="user_limit">
+                    <option value="50k">50k</option>
+                    <option value=1050k">100k</option>
+                    <option value="200k">200k</option>
+                    </select>
+  
+                 </fieldset>
+               
+                <button type="submit">Order Card</button>
+                
+               </form>
+            </div>
+
+            <div class="img">
+                <h3>Card Selected:</h3>
+                <img id="card_image" src="assets/images/card-bronze.png" alt="" srcset="">
+            </div>
+        </div>
+        <br>
+
+
     </section>
 
     <footer>
