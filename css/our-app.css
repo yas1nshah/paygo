@@ -1,0 +1,86 @@
+
+h1{
+    font-size: 2.4rem;
+    margin-left: 20px;
+}
+
+.main{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.App span{
+    color: rgba(6, 138, 226, 0.98);
+}
+
+.simplify{
+    font-size: 3.1rem;
+    text-transform: capitalize;
+    margin-left: 20px;
+    font-weight: bold;
+
+}
+
+.cardimg{
+    transform: rotate(-60deg);
+    margin-bottom: 50px;
+}
+
+.cardimg:hover {
+    -webkit-box-reflect: left 25px linear-gradient(to left, rgba(232, 137, 137, 0), rgba(114, 105, 105, 0.531));
+       box-shadow: 0 0 5px rgb(172, 136, 207),0 0 15px  rgb(172, 136, 207),0 0 25px  rgb(172, 136, 207),0 0 40px  rgb(172, 136, 207) ; 
+       transition: ease 1.5s ;
+       transition: ease-out 1s;
+}
+  
+.enhancing{
+    font-size: 1.2rem;
+}
+
+
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.imgspace{
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
+
+.appicon{
+    border: 1.5px solid whitesmoke;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.playicon{
+    border: 1.5px solid whitesmoke;
+    border-radius: 10px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.icon{
+    margin-left: 30px;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: row;
+}
+
+.excellent{
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.rating{
+    color: rgba(6, 138, 226, 0.98);
+}
+
+.checked{
+    color: orange;
+}
